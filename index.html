@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="english" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سيرة ذاتية</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // إضافة تفاعل لتغيير لون الخلفية عند الضغط على القسم
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.addEventListener('click', function() {
+                    sections.forEach(sec => sec.style.backgroundColor = ''); // إعادة تعيين الألوان الأخرى
+                    this.style.backgroundColor = '#d1c4e9'; // تغيير لون الخلفية للقسم المحدد
+                });
+            });
+        });
+    </script>
+</head>
+<body >
+    <div class="resume">
+        <header>
+            <h1>Wasan Ali Alshehri</h1>
+            <p><a href="mailto:wasanali5077@gmail.com">wasanali5077@gmail.com</a></p>
+            <p>0557806414</p>
+        </header>
+        <section class="about">
+            <h2>About Me </h2>
+            <p>Bachelor's degree student in Information Technology at the University of Tabuk.</p>
+        </section>
+        <section class="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>sports</li>
+                <li>reading</li>
+            </ul>
+        </section>
+        <section class="skills">
+            <h2>skills</h2>
+            <ul>
+                <li>programming</li>
+                <li>office </li>
+             
+            </ul>
+        </section>
+        <section class="education">
+            <h2>Scientific level </h2>
+            <ul>
+                <li>high school</li>
+            </ul>
+        </section>
+        <section class="certifications">
+            <h2>Certificates </h2>
+            <ul>
+                <li>Mobile application programming  </li>
+            </ul>
+        </section>
+        <section class="training">
+            <h2>Trainig</h2>
+            <ul>
+                <li>php - java - time management</li>
+            </ul>
+        </section>
+        
+        <section class="languages">
+            <h2>languages</h2>
+            <ul>
+                <li>arabic </li>
+                <li>english </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
